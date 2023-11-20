@@ -17,9 +17,6 @@ Open And Configure Browser
     Open Browser  browser=chrome  options=${options}
     Set Selenium Speed  ${DELAY}
 
-Login Page Should Be Open
-    Title Should Be  Login
-
 Main Page Should Be Open
     Title Should Be  Ohtu Application main page
 
@@ -28,9 +25,6 @@ Register Page Should Be Open
 
 Welcome Page Should Be Open
     Title Should Be  Welcome to Ohtu Application!
-
-Go To Login Page
-    Go To  ${LOGIN_URL}
 
 Go To Starting Page
     Go To  ${HOME_URL}

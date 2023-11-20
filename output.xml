@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.1.1 (Python 3.10.8 on win32)" generated="20231120 04:21:54.515" rpa="false" schemaversion="4">
+<robot generator="Robot 6.1.1 (Python 3.10.8 on win32)" generated="20231120 04:51:46.004" rpa="false" schemaversion="4">
 <suite id="s1" name="Login" source="c:\Users\Jaakko\Documents\Projects\ohtupalautus\viikko3\web-login\src\tests\login.robot">
 <kw name="Open And Configure Browser" library="resource" type="SETUP">
 <kw name="Evaluate" library="BuiltIn">
@@ -7,40 +7,36 @@
 <arg>sys.modules['selenium.webdriver'].ChromeOptions()</arg>
 <arg>sys</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20231120 04:21:54.561" level="FAIL">Evaluating expression 'sys.modules['selenium.webdriver'].ChromeOptions()' failed: KeyError: 'selenium.webdriver'</msg>
-<status status="FAIL" starttime="20231120 04:21:54.560" endtime="20231120 04:21:54.563"/>
+<msg timestamp="20231120 04:51:46.049" level="FAIL">Evaluating expression 'sys.modules['selenium.webdriver'].ChromeOptions()' failed: KeyError: 'selenium.webdriver'</msg>
+<status status="FAIL" starttime="20231120 04:51:46.049" endtime="20231120 04:51:46.051"/>
 </kw>
 <kw name="Call Method" library="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--no-sandbox</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="NOT RUN" starttime="20231120 04:21:54.563" endtime="20231120 04:21:54.563"/>
+<status status="NOT RUN" starttime="20231120 04:51:46.052" endtime="20231120 04:51:46.052"/>
 </kw>
 <kw name="Open Browser">
 <arg>browser=chrome</arg>
 <arg>options=${options}</arg>
-<status status="NOT RUN" starttime="20231120 04:21:54.565" endtime="20231120 04:21:54.565"/>
+<status status="NOT RUN" starttime="20231120 04:51:46.054" endtime="20231120 04:51:46.054"/>
 </kw>
 <kw name="Set Selenium Speed">
 <arg>${DELAY}</arg>
-<status status="NOT RUN" starttime="20231120 04:21:54.567" endtime="20231120 04:21:54.567"/>
+<status status="NOT RUN" starttime="20231120 04:51:46.055" endtime="20231120 04:51:46.055"/>
 </kw>
-<status status="FAIL" starttime="20231120 04:21:54.560" endtime="20231120 04:21:54.568"/>
+<status status="FAIL" starttime="20231120 04:51:46.048" endtime="20231120 04:51:46.055"/>
 </kw>
-<test id="s1-t1" name="Login With Correct Credentials" line="8">
-<status status="FAIL" starttime="20231120 04:21:54.568" endtime="20231120 04:21:54.568">Parent suite setup failed:
-Evaluating expression 'sys.modules['selenium.webdriver'].ChromeOptions()' failed: KeyError: 'selenium.webdriver'</status>
-</test>
-<test id="s1-t2" name="Login With Incorrect Password" line="14">
-<status status="FAIL" starttime="20231120 04:21:54.570" endtime="20231120 04:21:54.570">Parent suite setup failed:
+<test id="s1-t1" name="Login With Nonexistent Username" line="20">
+<status status="FAIL" starttime="20231120 04:51:46.056" endtime="20231120 04:51:46.056">Parent suite setup failed:
 Evaluating expression 'sys.modules['selenium.webdriver'].ChromeOptions()' failed: KeyError: 'selenium.webdriver'</status>
 </test>
 <kw name="Close Browser" type="TEARDOWN">
-<msg timestamp="20231120 04:21:54.574" level="FAIL">No keyword with name 'Close Browser' found.</msg>
-<status status="FAIL" starttime="20231120 04:21:54.573" endtime="20231120 04:21:54.574">No keyword with name 'Close Browser' found.</status>
+<msg timestamp="20231120 04:51:46.060" level="FAIL">No keyword with name 'Close Browser' found.</msg>
+<status status="FAIL" starttime="20231120 04:51:46.060" endtime="20231120 04:51:46.060">No keyword with name 'Close Browser' found.</status>
 </kw>
-<status status="FAIL" starttime="20231120 04:21:54.522" endtime="20231120 04:21:54.574">Suite setup failed:
+<status status="FAIL" starttime="20231120 04:51:46.011" endtime="20231120 04:51:46.061">Suite setup failed:
 Evaluating expression 'sys.modules['selenium.webdriver'].ChromeOptions()' failed: KeyError: 'selenium.webdriver'
 
 Also suite teardown failed:
@@ -48,16 +44,16 @@ No keyword with name 'Close Browser' found.</status>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="2" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="0" fail="2" skip="0" id="s1" name="Login">Login</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="Login">Login</stat>
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20231120 04:21:54.551" level="ERROR">Error in file 'c:\Users\Jaakko\Documents\Projects\ohtupalautus\viikko3\web-login\src\tests\resource.robot' on line 2: Importing library 'SeleniumLibrary' failed: ModuleNotFoundError: No module named 'SeleniumLibrary'
+<msg timestamp="20231120 04:51:46.039" level="ERROR">Error in file 'c:\Users\Jaakko\Documents\Projects\ohtupalautus\viikko3\web-login\src\tests\resource.robot' on line 2: Importing library 'SeleniumLibrary' failed: ModuleNotFoundError: No module named 'SeleniumLibrary'
 Traceback (most recent call last):
   None
 PYTHONPATH:
@@ -71,7 +67,7 @@ PYTHONPATH:
   C:\Python310
   C:\Python310\lib\site-packages
   C:\Python310\lib\site-packages\vboxapi-1.0-py3.10.egg</msg>
-<msg timestamp="20231120 04:21:54.557" level="ERROR">Error in file 'c:\Users\Jaakko\Documents\Projects\ohtupalautus\viikko3\web-login\src\tests\resource.robot' on line 3: Importing library 'c:\Users\Jaakko\Documents\Projects\ohtupalautus\viikko3\web-login\src\AppLibrary.py' failed: ModuleNotFoundError: No module named 'requests'
+<msg timestamp="20231120 04:51:46.044" level="ERROR">Error in file 'c:\Users\Jaakko\Documents\Projects\ohtupalautus\viikko3\web-login\src\tests\resource.robot' on line 3: Importing library 'c:\Users\Jaakko\Documents\Projects\ohtupalautus\viikko3\web-login\src\AppLibrary.py' failed: ModuleNotFoundError: No module named 'requests'
 Traceback (most recent call last):
   File "c:\Users\Jaakko\Documents\Projects\ohtupalautus\viikko3\web-login\src\AppLibrary.py", line 1, in &lt;module&gt;
     import requests

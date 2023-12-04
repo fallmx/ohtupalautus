@@ -42,7 +42,7 @@ class Kumoa:
         self.lue_syote = lue_syote
     
     def suorita(self):
-        pass
+        self.sovellus.kumoa()
 
 
 class Kayttoliittyma:

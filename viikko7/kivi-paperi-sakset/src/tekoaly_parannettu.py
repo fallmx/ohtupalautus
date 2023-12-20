@@ -1,5 +1,7 @@
+from tekoaly import Tekoaly
+
 # "Muistava tekoäly"
-class TekoalyParannettu:
+class TekoalyParannettu(Tekoaly):
     def __init__(self, muistin_koko):
         self._muisti = [None] * muistin_koko
         self._vapaa_muisti_indeksi = 0
